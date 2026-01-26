@@ -18,16 +18,16 @@ Sertifikat Web adalah platform sederhana dan elegan yang memungkinkan mahasiswa 
 ---
 ```bash
 sertifikat-web/
-├── 📄 index.html              # Halaman utama
+├── 📄 index.html              
 ├── 📁 data/
-│   └── 📄 certificates.json   # Database sertifikat
+│   └── 📄 certificates.json  
 ├── 📁 assets/
-│   ├── 🖼️ logo.png       # Logo kustom
+│   ├── 🖼️ logo.png     
 │   ├── 📁 css/
-│   │   └── 🎨 style.css      # Stylesheet utama
+│   │   └── 🎨 style.css     
 │   └── 📁 pdf/
 └── 📁 js/
-    └── ⚙️ script.js           # JavaScript utama
+    └── ⚙️ script.js          
 ```
 
 🖥️ **Preview Tampilan**
