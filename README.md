@@ -3,23 +3,19 @@
 🎯 **Tentang Proyek**
 Sertifikat Web adalah platform sederhana dan elegan yang memungkinkan mahasiswa mendownload sertifikat mereka dengan mudah hanya menggunakan Nomor Induk Mahasiswa (NIM). Sistem ini dirancang dengan tampilan minimalist yang user-friendly dan fungsionalitas yang efisien.
 
+
 ✨ **Fitur Utama**
-🔍 Pencarian Cepat - Temukan sertifikat hanya dengan NIM
-
-📄 Preview Sertifikat - Lihat informasi sertifikat sebelum download
-
-⬇️ Download Otomatis - Unduh sertifikat dengan satu klik
-
-🎨 Desain Minimalist - Tampilan clean dengan palet warna biru tua dan abu terang
-
-📱 Responsive Design - Optimal di semua perangkat
-
-🔒 Validasi Input - Sistem validasi NIM otomatis
-
-⚡ Tanpa Backend - Berjalan murni dengan HTML, CSS, dan JavaScript
+---
+- 🔍 Pencarian Cepat - Temukan sertifikat hanya dengan NIM
+- 📄 Preview Sertifikat - Lihat informasi sertifikat sebelum download
+- ⬇️ Download Otomatis - Unduh sertifikat dengan satu klik
+- 🎨 Desain Minimalist - Tampilan clean dengan palet warna biru tua dan abu terang
+- 📱 Responsive Design - Optimal di semua perangkat
+- 🔒 Validasi Input - Sistem validasi NIM otomatis
+- ⚡ Tanpa Backend - Berjalan murni dengan HTML, CSS, dan JavaScript
 
 📁 **Struktur Proyek**
-
+---
 ```bash
 sertifikat-web/
 ├── 📄 index.html              # Halaman utama
@@ -35,17 +31,22 @@ sertifikat-web/
 ```
 
 🖥️ **Preview Tampilan**
+---
 🏠 Halaman Pencarian
 
 <img width="1223" height="866" alt="Screenshot from 2026-01-26 22-40-31" src="https://github.com/user-attachments/assets/6f052447-8a94-47ff-8d68-917ce3f85af2" />
 
 Tampilan utama dengan form pencarian NIM
 
+---
+
 ✅ **Halaman Hasil**
 
 <img width="1223" height="874" alt="Screenshot from 2026-01-26 22-42-20" src="https://github.com/user-attachments/assets/96ba3eab-7793-49fb-8f55-246024d45a92" />
 
 Tampilan hasil pencarian dengan detail sertifikat
+
+---
 
 ## Cara Penggunaan
 
