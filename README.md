@@ -20,6 +20,7 @@ Sertifikat Web adalah platform sederhana dan elegan yang memungkinkan mahasiswa 
 
 📁 **Struktur Proyek**
 
+```bash
 sertifikat-web/
 ├── 📄 index.html              # Halaman utama
 ├── 📁 data/
@@ -31,13 +32,18 @@ sertifikat-web/
 │   └── 📁 pdf/
 └── 📁 js/
     └── ⚙️ script.js           # JavaScript utama
+```
 
 🖥️ **Preview Tampilan**
 🏠 Halaman Pencarian
 
+<img width="1223" height="866" alt="Screenshot from 2026-01-26 22-40-31" src="https://github.com/user-attachments/assets/6f052447-8a94-47ff-8d68-917ce3f85af2" />
+
 Tampilan utama dengan form pencarian NIM
 
 ✅ **Halaman Hasil**
+
+<img width="1223" height="874" alt="Screenshot from 2026-01-26 22-42-20" src="https://github.com/user-attachments/assets/96ba3eab-7793-49fb-8f55-246024d45a92" />
 
 Tampilan hasil pencarian dengan detail sertifikat
 
