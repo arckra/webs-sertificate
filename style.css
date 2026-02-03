@@ -1,0 +1,1210 @@
+/* Reset dan Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #e1dee6;
+    min-height: 100vh;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Mode Selection */
+.mode-selection {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.logo h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+}
+
+.mode-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.mode-card {
+    background: white;
+    border-radius: 15px;
+    padding: 40px 30px;
+    width: 300px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border: 2px solid transparent;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.mode-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    border-color: #142b6f;
+}
+
+.mode-icon {
+    font-size: 3rem;
+    color: #4a6bff;
+    margin-bottom: 20px;
+}
+
+.mode-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+.mode-card p {
+    color: #666;
+    font-size: 0.95rem;
+}
+
+/* User Screen */
+.user-screen {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    color: #142b6f;
+}
+
+.logo-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-header i {
+    font-size: 2rem;
+}
+
+.logo-header h1 {
+    font-size: 1.8rem;
+}
+
+.logout-btn {
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #142b6f;
+    padding: 8px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.logout-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+    text-decoration: none;
+    color: #142b6f;
+}
+
+main {
+    padding: 30px;
+}
+
+.hero {
+    text-align: center;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.hero h2 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    color: #666;
+    font-size: 1.1rem;
+}
+
+.search-section {
+    background: #f8f9fa;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.search-section h3 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-section > p {
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.filter-section {
+    margin-bottom: 25px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #2c3e50;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.form-control, .input-with-icon input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border 0.3s ease;
+}
+
+.form-control:focus, .input-with-icon input:focus {
+    outline: none;
+    border-color: #4a6bff;
+}
+
+.input-with-icon {
+    position: relative;
+}
+
+.input-with-icon i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #666;
+}
+
+.input-with-icon input {
+    padding-left: 45px;
+}
+
+.form-text {
+    display: block;
+    margin-top: 5px;
+    color: #888;
+    font-size: 0.85rem;
+}
+
+.search-box {
+    display: flex;
+    gap: 15px;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+.search-box .form-group {
+    flex: 1;
+    min-width: 300px;
+}
+
+.btn-primary {
+    background:  #142b6f 100%;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    height: 46px;
+    text-decoration: none;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(74, 107, 255, 0.3);
+    color: white;
+    text-decoration: none;
+}
+
+/* Results Section */
+.results-section {
+    margin-top: 30px;
+}
+
+.results-section h3 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.certificate-card {
+    background: white;
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    border-left: 4px solid #4a6bff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.certificate-info {
+    flex: 1;
+    min-width: 300px;
+}
+
+.certificate-info h4 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.certificate-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.detail-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #666;
+}
+
+.detail-item i {
+    color: #4a6bff;
+}
+
+.certificate-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-preview, .btn-download {
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.btn-preview {
+    background: #f8f9fa;
+    border: 2px solid #ddd;
+    color: #4a6bff;
+}
+
+.btn-download {
+    background: #28a745;
+    border: 2px solid #28a745;
+    color: white;
+}
+
+.btn-preview:hover {
+    background: #e9ecef;
+    text-decoration: none;
+}
+
+.btn-download:hover {
+    background: #218838;
+    border-color: #1e7e34;
+    text-decoration: none;
+    color: white;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+    border-top: 1px solid #eee;
+    margin-top: 40px;
+}
+
+/* Login Page */
+.login-container {
+    max-width: 400px;
+    margin: 100px auto;
+    background: white;
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.login-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.login-header i {
+    font-size: 3rem;
+    color: #4a6bff;
+    margin-bottom: 15px;
+}
+
+.login-header h1 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.login-header p {
+    color: #666;
+}
+
+.login-form {
+    margin-bottom: 20px;
+}
+
+.error-message {
+    background: #f8d7da;
+    color: #721c24;
+    padding: 12px;
+    border-radius: 6px;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.success-message {
+    background: #d4edda;
+    color: #155724;
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.back-link {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.back-link a {
+    color: #4a6bff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.back-link a:hover {
+    text-decoration: underline;
+}
+
+/* Admin Dashboard */
+.admin-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: white;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.header-left, .header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.btn-success {
+    background: linear-gradient(135deg, #28a745 0%, #218838 100%);
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.btn-success:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(40, 167, 69, 0.3);
+    color: white;
+    text-decoration: none;
+}
+
+.admin-controls {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.filter-search-row {
+    display: flex;
+    align-items: flex-end;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.filter-group {
+    min-width: 250px;
+}
+
+.filter-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #333;
+}
+
+#admin-filter-acara {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #e1e5e9;
+    border-radius: 10px;
+    font-size: 15px;
+    background-color: #f8f9fa;
+    transition: all 0.3s ease;
+}
+
+#admin-filter-acara:focus {
+    border-color: #667eea;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.filter-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.filter-section .form-group {
+    flex: 1;
+    min-width: 250px;
+}
+
+.search-box-admin {
+    display: flex;
+    gap: 10px;
+    align-items: flex-end;
+}
+
+.search-box-admin .input-with-icon {
+    min-width: 300px;
+}
+
+.data-section {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.data-section h3 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table thead {
+    background: #f8f9fa;
+}
+
+table th, table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+table th {
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+table tr:hover {
+    background: #f8f9fa;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.btn-edit, .btn-delete {
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    font-size: 0.85rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.btn-edit {
+    background: #ffc107;
+    color: #212529;
+}
+
+.btn-delete {
+    background: #dc3545;
+    color: white;
+}
+
+.no-data-message {
+    text-align: center;
+    padding: 50px 20px;
+    color: #666;
+}
+
+.no-data-message i {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    color: #ddd;
+}
+
+/* Modal */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: white;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 500px;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 25px;
+    border-bottom: 1px solid #eee;
+}
+
+.modal-header h3 {
+    color: #2c3e50;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.close-modal, .close-edit-modal {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #666;
+}
+
+.modal-body {
+    padding: 25px;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.btn-secondary {
+    background: #6c757d;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.btn-secondary:hover {
+    background: #5a6268;
+    color: white;
+    text-decoration: none;
+}
+
+/* Preview Modal */
+#preview-modal .modal-content {
+    max-width: 800px;
+}
+
+.preview-content {
+    text-align: center;
+    padding: 20px;
+}
+
+#preview-image {
+    max-width: 100%;
+    max-height: 70vh;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .mode-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .mode-card {
+        width: 100%;
+        max-width: 400px;
+    }
+    
+    .search-box {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .search-box .form-group {
+        min-width: auto;
+    }
+    
+    .certificate-card {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .certificate-info {
+        min-width: auto;
+    }
+    
+    .admin-header {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+    
+    .filter-section {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .search-box-admin .input-with-icon {
+        min-width: auto;
+    }
+    
+    table th, table td {
+        padding: 10px 5px;
+        font-size: 0.9rem;
+    }
+}
+
+/* ===== PERBAIKAN LAYOUT DASHBOARD ===== */
+
+/* Header section untuk Data Sertifikat */
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #eaeaea;
+}
+
+.section-header h3 {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Perbaikan filter dan search layout */
+.admin-controls .filter-section {
+    display: flex;
+    align-items: flex-end;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+
+.filter-form {
+    flex: 1;
+    min-width: 250px;
+}
+
+.search-form {
+    flex: 2;
+    min-width: 300px;
+}
+
+.search-box-admin {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.search-box-admin .input-with-icon {
+    flex: 1;
+}
+
+.search-action-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.search-box-admin {
+    display: flex;
+    gap: 10px;
+    align-items: flex-end;
+    width: 100%;
+}
+
+.search-box-admin .input-with-icon {
+    flex: 1;
+    position: relative;
+}
+
+.search-box-admin .input-with-icon i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #667eea;
+}
+
+.search-box-admin .input-with-icon input {
+    width: 100%;
+    padding: 12px 15px 12px 45px;
+    border: 2px solid #e1e5e9;
+    border-radius: 10px;
+    font-size: 15px;
+    background-color: #f8f9fa;
+    transition: all 0.3s ease;
+    height: 46px;
+}
+
+.search-box-admin .input-with-icon input:focus {
+    border-color: #667eea;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.search-btn {
+    height: 46px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    white-space: nowrap;
+    margin-bottom: 0;
+}
+
+.reset-btn {
+    height: 46px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    white-space: nowrap;
+    background: #6c757d;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.reset-btn:hover {
+    background: #5a6268;
+    transform: translateY(-2px);
+    text-decoration: none;
+    color: white;
+}
+
+/* Responsive untuk mobile */
+@media (max-width: 768px) {
+    .filter-search-row {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 15px;
+    }
+    
+    .filter-group {
+        width: 100%;
+        min-width: 100%;
+    }
+    
+    .search-box-admin {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .search-btn,
+    .reset-btn {
+        width: 100%;
+        height: 46px;
+        margin-top: 10px;
+    }
+}
+
+/* CSS untuk meluruskan NIM dengan tombol Cari */
+.nim-search-row {
+    display: flex;
+    align-items: flex-start; /* Ganti dari flex-end ke flex-start */
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.nim-input-container {
+    flex: 1;
+}
+
+.search-button-container {
+    margin-top: 25px; /* Naikkan tombol agar sejajar dengan input */
+}
+
+/* Pastikan tombol memiliki tinggi yang sesuai */
+.btn-primary {
+    height: 46px; /* Sama dengan tinggi input */
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    white-space: nowrap;
+    margin-top: 0; /* Pastikan tidak ada margin atas tambahan */
+}
+
+/* Styling untuk input */
+.input-with-icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-with-icon i {
+    position: absolute;
+    left: 15px;
+    color: #667eea;
+}
+
+.input-with-icon input {
+    width: 100%;
+    padding: 12px 15px 12px 45px;
+    border: 2px solid #e1e5e9;
+    border-radius: 10px;
+    font-size: 15px;
+    background-color: #f8f9fa;
+    transition: all 0.3s ease;
+}
+
+.form-text {
+    display: block;
+    margin-top: 5px;
+    color: #666;
+    font-size: 13px;
+    margin-left: 0; /* Pastikan text kecil sejajar kiri */
+}
+
+/* Responsive untuk mobile */
+@media (max-width: 768px) {
+    .nim-search-row {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .search-button-container {
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+    
+    .btn-primary {
+        width: 100%;
+        height: auto;
+        padding: 12px;
+    }
+    
+    .form-text {
+        margin-top: 10px;
+    }
+}
+
+/* Style untuk tabel yang lebih baik */
+.table-container {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table thead {
+    background: linear-gradient(135deg, #4a6bff 0%, #3a4bcc 100%);
+}
+
+table th {
+    color: white;
+    font-weight: 600;
+    padding: 15px;
+    text-align: left;
+    border-bottom: 2px solid #3a4bcc;
+}
+
+table td {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+table tr:last-child td {
+    border-bottom: none;
+}
+
+table tr:hover {
+    background-color: #f8f9ff;
+}
+
+/* Style untuk tombol aksi dalam tabel */
+.action-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.action-buttons .btn-edit,
+.action-buttons .btn-delete {
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: all 0.3s ease;
+}
+
+.action-buttons .btn-edit {
+    background: #ffc107;
+    color: #212529;
+    border: none;
+}
+
+.action-buttons .btn-edit:hover {
+    background: #e0a800;
+    transform: translateY(-1px);
+}
+
+.action-buttons .btn-delete {
+    background: #dc3545;
+    color: white;
+    border: none;
+}
+
+.action-buttons .btn-delete:hover {
+    background: #c82333;
+    transform: translateY(-1px);
+}
+
+/* Style untuk tombol lihat sertifikat */
+.btn-preview {
+    padding: 6px 12px;
+    border-radius: 4px;
+    background: #f8f9fa;
+    border: 1px solid #ddd;
+    color: #4a6bff;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    transition: all 0.3s ease;
+}
+
+.btn-preview:hover {
+    background: #e9ecef;
+    color: #3a4bcc;
+    text-decoration: none;
+}
+
+/* Style untuk tombol logout di header */
+.admin-header .logout-btn {
+    background: rgba(220, 53, 69, 0.1);
+    border: 1px solid rgba(220, 53, 69, 0.3);
+    color: #dc3545;
+}
+
+.admin-header .logout-btn:hover {
+    background: rgba(220, 53, 69, 0.2);
+    color: #c82333;
+}
+
+/* Style untuk pesan tidak ada data */
+.no-data-message {
+    text-align: center;
+    padding: 40px 20px;
+    color: #666;
+}
+
+.no-data-message i {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    color: #ddd;
+}
+
+.no-data-message p {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+/* ===== LOGO STYLES ===== */
+
+/* Logo utama di halaman mode selection */
+.logo {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.logo-image {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.logo h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin: 0;
+}
+
+/* Logo di header user screen */
+.logo-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-header-image {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.logo-header h1 {
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+/* Logo di header admin */
+.admin-header-logo {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+    margin-right: 10px;
+}
+
+/* Logo di halaman login */
+.login-logo {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+/* Responsive logo sizes */
+@media (max-width: 768px) {
+    .logo-image {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .logo h1 {
+        font-size: 2rem;
+    }
+    
+    .logo-header-image {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .logo-header h1 {
+        font-size: 1.5rem;
+    }
+    
+    .admin-header-logo {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .login-logo {
+        width: 70px;
+        height: 70px;
+    }
+}
