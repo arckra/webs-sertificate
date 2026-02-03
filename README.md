@@ -17,24 +17,38 @@ Sertifikat Web adalah platform sederhana dan elegan yang memungkinkan mahasiswa 
 📁 **Struktur Proyek**
 ---
 ```bash
-sertifikat-web/
-├── 📄 index.html              
-├── 📁 data/
-│   └── 📄 certificates.json  
-├── 📁 assets/
-│   ├── 🖼️ logo.png     
-│   ├── 📁 css/
-│   │   └── 🎨 style.css     
-│   └── 📁 pdf/
-└── 📁 js/
-    └── ⚙️ script.js          
+📦sertifikat-website
+ ┣ 📂assets
+ ┃ ┗ 📂images
+ ┃ ┃ ┗ 📜logo-himatif.png
+ ┣ 📂includes
+ ┃ ┣ 📜config.php
+ ┃ ┗ 📜functions.php
+ ┣ 📂uploads
+ ┃ ┣ 📜312410001.pdf
+ ┃ ┣ 📜312410002.pdf
+ ┃ ┗ 📜312410248.pdf
+ ┣ 📜admin.js
+ ┣ 📜admin.php
+ ┣ 📜ajax_get_certificate.php
+ ┣ 📜dashboard.php
+ ┣ 📜index.php
+ ┣ 📜logout.php
+ ┣ 📜script.js
+ ┗ 📜style.css         
 ```
 
 🖥️ **Preview Tampilan**
 ---
-🏠 Halaman Pencarian
+💻 Halaman Awal
 
-<img width="1223" height="866" alt="Screenshot from 2026-01-26 22-40-31" src="https://github.com/user-attachments/assets/6f052447-8a94-47ff-8d68-917ce3f85af2" />
+<img width="1120" height="654" alt="image" src="https://github.com/user-attachments/assets/48f36619-1a5e-496d-b5cb-38db58714582" />
+
+---
+
+🏠 Halaman Pengguna
+
+<img width="1389" height="900" alt="image" src="https://github.com/user-attachments/assets/cc3bb7cb-ad56-448a-bb34-b96173bcdb72" />
 
 Tampilan utama dengan form pencarian NIM
 
@@ -42,9 +56,21 @@ Tampilan utama dengan form pencarian NIM
 
 ✅ **Halaman Hasil**
 
-<img width="1223" height="874" alt="Screenshot from 2026-01-26 22-42-20" src="https://github.com/user-attachments/assets/96ba3eab-7793-49fb-8f55-246024d45a92" />
+<img width="1436" height="864" alt="image" src="https://github.com/user-attachments/assets/470f4a07-c814-44fb-985b-f371f414cbc6" />
 
 Tampilan hasil pencarian dengan detail sertifikat
+
+---
+
+🙍‍♂️ Halaman Login Admin
+
+<img width="688" height="708" alt="image" src="https://github.com/user-attachments/assets/b3d26879-1fef-44db-94ce-034209960ece" />
+
+---
+
+👨‍💻 Halaman Dashboard Admin
+
+<img width="1350" height="821" alt="image" src="https://github.com/user-attachments/assets/7d86e905-eff9-4393-b10a-216ee3a6aa48" />
 
 ---
 
@@ -61,33 +87,14 @@ Tampilan hasil pencarian dengan detail sertifikat
 ### Bagi Admin:
 
 1. **Tambah Data** - Tambahkan data sertifikat melalui API atau langsung ke tabel
-2. **Upload PDF** - Upload file PDF ke folder `assets/pdf/`
+2. **Upload PDF** - Upload file PDF ke folder `uploads/`
 3. **Update Informasi** - Pastikan informasi mahasiswa sesuai
-
-## Struktur Data
-
-### Tabel Sertifikat
-```
-- nim (text): Nomor Induk Mahasiswa
-- nama (text): Nama lengkap mahasiswa
-- program_studi (text): Program studi
-- jenis_sertifikat (text): Jenis sertifikat
-- tanggal_terbit (datetime): Tanggal penerbitan
-- file_path (text): Path file PDF
-```
-
-## Endpoint API
-
-- `GET /tables/sertifikat` - Mendapatkan daftar sertifikat
-- `POST /tables/sertifikat` - Menambahkan data sertifikat baru
-- `PUT /tables/sertifikat/{id}` - Update data sertifikat
-- `DELETE /tables/sertifikat/{id}` - Menghapus data sertifikat
 
 ## Instalasi dan Setup
 
 1. **Clone Repository** - Download semua file ke server web
 2. **Setup Data** - Jalankan website untuk membuat tabel otomatis
-3. **Upload PDF** - Upload file PDF ke folder `assets/pdf/`
+3. **Upload PDF** - Upload file PDF ke folder `uploads/`
 4. **Tambah Data** - Tambahkan data mahasiswa ke tabel
 5. **Deploy** - Deploy ke server web
 
@@ -109,8 +116,8 @@ Tampilan hasil pencarian dengan detail sertifikat
 ## Troubleshooting
 
 ### File PDF Tidak Bisa Didownload
-- Pastikan file PDF ada di folder `assets/pdf/`
-- Cek nama file sesuai dengan `sertifikat_[NIM].pdf`
+- Pastikan file PDF ada di folder `uploads/`
+- Cek nama file sesuai dengan `[NIM].pdf`
 - Pastikan file memiliki izin baca yang benar
 
 ### Data Tidak Ditemukan
