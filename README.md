@@ -98,37 +98,12 @@ Tampilan hasil pencarian dengan detail sertifikat
 4. **Tambah Data** - Tambahkan data mahasiswa ke tabel
 5. **Deploy** - Deploy ke server web
 
-## Warna Tema
-
-- **Primary**: Biru tua (#1e3a5f, #2c5282)
-- **Secondary**: Abu terang (#a0aec0, #cbd5e0)
-- **Accent**: Biru cerah (#4299e1)
-- **Success**: Hijau (#38a169)
-- **Error**: Merah (#e53e3e)
-
 ## Fitur Keamanan
 
 - Validasi input NIM (hanya alphanumeric)
 - Penanganan error yang baik
 - Tidak ada akses langsung ke file tanpa NIM yang valid
 - Tidak ada data sensitif yang disimpan di frontend
-
-## Troubleshooting
-
-### File PDF Tidak Bisa Didownload
-- Pastikan file PDF ada di folder `uploads/`
-- Cek nama file sesuai dengan `[NIM].pdf`
-- Pastikan file memiliki izin baca yang benar
-
-### Data Tidak Ditemukan
-- Cek apakah data sudah ditambahkan ke tabel
-- Pastikan NIM yang dicari sesuai dengan data
-- Cek koneksi ke API
-
-### Error Umum
-- Refresh halaman dan coba lagi
-- Clear browser cache
-- Cek console log untuk detail error
 
 ## Browser Support
 
